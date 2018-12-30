@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-1class Point {
+class Point {
 private:
   int x;
   int y;
