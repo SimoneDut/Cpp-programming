@@ -1,4 +1,4 @@
-1#include <cstdio>
+#include <cstdio>
 #include <cstdlib>
 
 class Point {
