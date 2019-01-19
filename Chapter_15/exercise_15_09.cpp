@@ -44,10 +44,10 @@ int main(void) {
   std::printf("size of a is %d\n",a.size());
   IntArray b(4);
   std::printf("size of b is %d\n",b.size());
+  b.elements[0] = 0;
   b.elements[1] = 1;
   b.elements[2] = 2;
   b.elements[3] = 3;
-  b.elements[4] = 4;
   IntArray c = b;
   std::printf("size of c is %d\n",c.size());
   IntArray d;
