@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-class Example {
+2class Example {
 private:
   int data;
 public:
