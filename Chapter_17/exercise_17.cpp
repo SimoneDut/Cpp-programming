@@ -198,21 +198,7 @@ void printElementsScreen(const T& container) {
 
 template<typename R, typename S>
 void sortElements(std::vector<R>& list, S& orderingOperator) {
-  if (list.size() > 1) {
-    R app;
-    size_t minPos;
-    for (size_t i = 0; i < list.size()-1; i++) {
-      minPos = i;
-      for (size_t j = i+1; j < list.size(); j++) {
-	if (orderingOperator(list[j],list[minPos])) {
-	  minPos = j;	  
-	}
-      }
-      app = list[i];
-      list[i] = list[minPos];
-      list[minPos] = app;
-    }
-  }
+  std::sort(list.begin(),list.end(),orderingOperator);
 }
 
 template<typename T1, typename T2>
